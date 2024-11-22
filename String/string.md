@@ -196,4 +196,89 @@ Found at position: 6
 
 ---
 
+
+# String Conversion to Uppercase 🚀
+
+This program takes an input string from the user and converts all alphabetical characters to uppercase. Non-alphabetical characters remain unchanged.
+
+---
+
+## Code Explanation 🖥️
+
+### Header Files
+- `#include <stdio.h>`: Includes the standard input-output library for using functions like `printf` and `fgets`.
+
+### Workflow
+
+1. **Input Prompt** 🖋️  
+   - The program starts by prompting the user to enter a string.
+   - `fgets` is used to safely read the input string, including spaces.
+
+2. **Conversion Logic** 🔄  
+   - A `for` loop iterates over each character of the string.
+   - If the character is a lowercase (`'a'` to `'z'`) or uppercase (`'A'` to `'Z'`) letter:
+     - It is converted to uppercase using the ASCII value adjustment: `input[i] -= 32`.
+
+3. **Output** 📤  
+   - Displays the string before and after conversion.
+
+---
+
+## Code Snippet 🧩
+```c
+#include <stdio.h>
+
+int main()
+{
+  printf("Enter the string : \n");
+  char input[100];
+  fgets(input, 100, stdin);
+  printf("String before conversion : %s\n", input);
+
+  for (int i = 0; input[i] != '\0'; i++)
+  {
+    if (input[i] >= 'a' && input[i] <= 'z' || input[i] >= 'A' && input[i] <= 'Z')
+    {
+      input[i] -= 32;
+    }
+  }
+
+  printf("String after conversion : %s\n", input);
+}
+```
+
+---
+
+## Example Usage 🤖
+**Input:**  
+```
+Hello, World!
+```
+
+**Output:**  
+```
+String before conversion : Hello, World!
+String after conversion : HELLO, WORLD!
+```
+
+---
+
+## Key Points to Remember 📝
+1. **ASCII Adjustment**:  
+   - Lowercase letters have ASCII values from 97 (`'a'`) to 122 (`'z'`).
+   - Subtracting 32 converts them to uppercase (ASCII 65–90).
+
+2. **Non-Alphabet Characters**:  
+   - Characters like spaces, numbers, or symbols remain unchanged.
+
+3. **Safe Input Handling**:  
+   - `fgets` ensures that the input does not exceed the buffer size.
+
+---
+
+Enjoy exploring strings with this handy program! 🎉
+
+
+
+
 🌟 **Happy Coding!** 🌟
