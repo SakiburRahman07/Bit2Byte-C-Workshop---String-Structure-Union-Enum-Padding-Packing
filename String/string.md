@@ -279,6 +279,87 @@ String after conversion : HELLO, WORLD!
 Enjoy exploring strings with this handy program! 🎉
 
 
+# String Conversion to Uppercase with `toupper` 🚀
+
+This program takes an input string from the user and converts all alphabetical characters to uppercase using the `toupper` function from the `ctype.h` library. Non-alphabetical characters remain unchanged.
+
+---
+
+## Code Explanation 🖥️
+
+### Header Files
+- `#include <stdio.h>`: Includes the standard input-output library for using functions like `printf` and `fgets`.
+- `#include <ctype.h>`: Includes the library for character handling functions like `toupper`.
+
+### Workflow
+
+1. **Input Prompt** 🖋️  
+   - The program starts by prompting the user to enter a string.
+   - `fgets` is used to safely read the input string, including spaces.
+
+2. **Conversion Logic** 🔄  
+   - A `for` loop iterates over each character of the string.
+   - The `toupper` function is used to convert each character to uppercase if it is a lowercase letter.
+
+3. **Output** 📤  
+   - Displays the string before and after conversion.
+
+---
+
+## Code Snippet 🧩
+```c
+#include <stdio.h>
+#include <ctype.h>
+
+int main()
+{
+  printf("Enter the string : \n");
+  char input[100];
+  fgets(input, 100, stdin);
+  printf("String before conversion : %s\n", input);
+
+  for (int i = 0; input[i] != '\0'; i++)
+  {
+    input[i] = toupper(input[i]);
+  }
+
+  printf("String after conversion : %s\n", input);
+}
+```
+
+---
+
+## Example Usage 🤖
+**Input:**  
+```
+Hello, World!
+```
+
+**Output:**  
+```
+String before conversion : Hello, World!
+String after conversion : HELLO, WORLD!
+```
+
+---
+
+## Key Points to Remember 📝
+1. **Using `toupper`**:  
+   - `toupper` is a function that converts a character to its uppercase equivalent if it is a lowercase letter.
+
+2. **Non-Alphabet Characters**:  
+   - Characters like spaces, numbers, or symbols remain unchanged.
+
+3. **Safe Input Handling**:  
+   - `fgets` ensures that the input does not exceed the buffer size.
+
+---
+
+Enjoy coding with this efficient and elegant approach! 🎉
+
+
+
+
 
 
 🌟 **Happy Coding!** 🌟
