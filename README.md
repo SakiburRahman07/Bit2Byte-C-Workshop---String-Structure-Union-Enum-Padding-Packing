@@ -6,19 +6,19 @@ Welcome to the **Bit2Byte C Workshop** repository! This project contains a colle
 
 ## 📖 Table of Contents
 
-- [📜 Strings]([./string.md](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/String/string.md))  
+- [📜 Strings](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/String/string.md)  
   Learn all about handling strings in C programming.
 
-- [🔗 Unions]([./union.md](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Union/Union.md))  
+- [🔗 Unions](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Union/Union.md)  
   Explore the concept of unions, their usage, and memory handling.
 
-- [🏗️ Structures]([./structure.md](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Structure/Structure.md))  
+- [🏗️ Structures](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Structure/Structure.md)  
   Understand how structures work and how they differ from unions.
 
-- [🛠️ Padding]([./padding.md](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Padding/Padding.md))  
+- [🛠️ Padding](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Padding/Padding.md)  
   Dive into memory alignment and how padding affects it.
 
-- [🎯 Packing]([./packing.md](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Packing/Packing.md))  
+- [🎯 Packing](https://github.com/SakiburRahman07/Bit2Byte-C-Workshop-String-Structure-Union-Enum-Padding-Packing/blob/main/Packing/Packing.md)  
   Learn about reducing memory usage through packing techniques.
 
 ---
