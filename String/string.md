@@ -761,6 +761,131 @@ Concatenated string using strcat: Bit2Bytes
 
 
 
+# 🌟 Code Explanation: String Copy in C 🌟
+
+This program demonstrates how to copy one string into another manually in C programming without using library functions like `strcpy`. Here's a breakdown of the code:
+
+---
+
+## 📋 Code Overview
+
+```c
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+  printf("Enter the 1st string: ");
+  char str1[100], str2[100];
+  gets(str1);
+
+  printf("Enter the 2nd string: ");
+  gets(str2);
+
+  int len1=0;
+  int len2=0;
+  while(str1[len1] != '\0'){
+    if(str1[len1] == '
+'){
+      str1[len1] = '\0';
+      break;
+    }
+    len1++;
+  }
+  while(str2[len2] != '\0'){
+    if(str2[len2] == '
+'){
+      str2[len2] = '\0';
+      break;
+    }
+    len2++;
+  }
+
+  for(int i=0; i<len2; i++)
+  {
+    str1[i]=str2[i];
+  }
+  str1[len2]='\0';
+
+  printf("The copied string is: %s", str1);
+}
+```
+
+---
+
+## 🔍 Code Explanation
+
+### 1️⃣ **Including Header Files**
+```c
+#include<stdio.h>
+#include<string.h>
+```
+- The `stdio.h` library is used for input/output functions like `printf` and `gets`.
+- The `string.h` library is included but not utilized in this program.
+
+### 2️⃣ **Input Strings**
+```c
+char str1[100], str2[100];
+gets(str1);
+gets(str2);
+```
+- Two strings, `str1` and `str2`, are declared to store the user inputs.
+- The `gets()` function is used to capture the strings. 🚨 **Note:** `gets` is unsafe and should be avoided in modern programming.
+
+### 3️⃣ **Length Calculation**
+```c
+int len1 = 0, len2 = 0;
+while(str1[len1] != '\0') { ... }
+while(str2[len2] != '\0') { ... }
+```
+- Loops traverse `str1` and `str2` to calculate their lengths (`len1` and `len2` respectively).
+- The program also removes any trailing newline (`
+`) by replacing it with a null terminator (`\0`).
+
+### 4️⃣ **String Copy Logic**
+```c
+for(int i = 0; i < len2; i++) {
+  str1[i] = str2[i];
+}
+str1[len2] = '\0';
+```
+- Characters from `str2` are copied one by one into `str1`.
+- The loop runs up to the length of `str2`, and a null terminator (`\0`) is added at the end of `str1`.
+
+### 5️⃣ **Output the Result**
+```c
+printf("The copied string is: %s", str1);
+```
+- The modified `str1` is printed, showing the result of the copy operation. 🎉
+
+---
+
+## 📝 Key Notes
+
+- 🚨 **Caution:** Avoid using `gets()` due to potential buffer overflow risks. Use `fgets()` instead.
+- 🌟 The program demonstrates a manual string copy mechanism, enhancing understanding of string manipulation.
+- 🛠️ It’s better to include error checks to handle edge cases, such as empty inputs.
+
+---
+
+## ✨ Sample Input/Output
+
+### Input:
+```
+Enter the 1st string: Hello
+Enter the 2nd string: World
+```
+
+### Output:
+```
+The copied string is: World
+```
+
+---
+
+💻 **Happy Coding!** 🌈
+
+
 
 
 
